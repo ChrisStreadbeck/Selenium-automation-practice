@@ -1,12 +1,10 @@
 from selenium import webdriver
-import os
 
-class TestPageOne():
+class FindByElement():
 
     def test(self):
         baseUrl = "https://learn.letskodeit.com/p/practice"
         driverLocation = "chromedriver.exe"
-        os.environ["webdriver.chrome.driver"] = driverLocation
         driver = webdriver.Chrome(driverLocation)
         driver.get(baseUrl)
         driver.maximize_window()
@@ -52,5 +50,5 @@ class TestPageOne():
             print("We found an element by Tag")
 
 
-chromeTest = TestPageOne()
+chromeTest = FindByElement()
 chromeTest.test()
