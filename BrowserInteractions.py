@@ -39,7 +39,7 @@ class BrowserInteractions():
         print("Current Url of the web page is: " + currentUrl)
         # Get Page Source
         pageSource = driver.page_source
-        print(pageSource)
+        # print(pageSource)
         # Browser Close / Quit
         # driver.close()
         driver.quit()
